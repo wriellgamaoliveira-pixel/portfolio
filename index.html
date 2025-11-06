@@ -1,153 +1,235 @@
-<!DOCTYPE html><html lang="pt-BR">
+<!doctype html>
+<html lang="pt-br">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wriell Oliveira Consultor — Portfólio Comercial</title>
-  <meta name="description" content="Treinamento especializado e diagnóstico fiscal. Redução de erros, produtividade e compliance com ROI comprovado." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    :root{
-      --bg:#0b1220;
-      --ink:#0f172a;
-      --card:#0f1222;
-      --soft:#1b2140;
-      --line:#1f2a44;
-      --text:#e5e7eb;
-      --muted:#94a3b8;
-      --brand-900:#1e40af;
-      --brand-700:#3346d3;
-      --brand-600:#3b82f6;
-      --accent:#22c55e;
-      --danger:#ef4444;
-      --warning:#f59e0b;
-      --shadow:0 12px 35px rgba(2,6,23,.35);
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;font-family:"Inter",system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,sans-serif;background:radial-gradient(1200px 600px at 10% -10%,#132244,transparent),radial-gradient(1000px 500px at 110% 10%,#0e1a36,transparent),#070a14;color:var(--text)}
-    a{color:inherit}
-    .container{max-width:1100px;margin:0 auto;padding:28px}
-    .hero{display:grid;gap:16px;grid-template-columns:1.2fr .8fr;align-items:center;border-radius:24px;padding:40px;background:linear-gradient(135deg,#0b1020,#0f1d46 30%,#1e3a8a 85%);box-shadow:var(--shadow)}
-    .hero h1{margin:0;font-size:clamp(28px,4vw,44px);line-height:1.05}
-    .hero p{margin:6px 0 0 0;color:#dbeafe}
-    .hero .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
-    .btn{appearance:none;border:none;cursor:pointer;text-decoration:none;padding:14px 18px;border-radius:12px;font-weight:800;letter-spacing:.2px;transition:transform .08s ease,box-shadow .2s ease}
-    .btn:hover{transform:translateY(-1px)}
-    .btn:active{transform:translateY(0)}
-    .btn-primary{background:linear-gradient(90deg,var(--brand-900),var(--brand-600));color:#fff;box-shadow:0 8px 24px rgba(59,130,246,.35)}
-    .btn-outline{background:transparent;border:1.5px solid #475569;color:#e2e8f0}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 10px 26px rgba(2,6,23,.25);backdrop-filter: blur(4px);}
-    .section{margin-top:28px}
-    h2{margin:0 0 12px 0;font-size:clamp(20px,2.6vw,28px)}
-    .grid{display:grid;gap:16px}
-    @media (min-width: 840px){
-      .grid-2{grid-template-columns:1fr 1fr}
-      .grid-3{grid-template-columns:repeat(3,1fr)}
-    }
-    .list{margin:10px 0 0 0;padding:0;list-style:none}
-    .list li{display:flex;gap:10px;align-items:flex-start;padding:6px 0;color:#cbd5e1}
-    .tag{display:inline-flex;align-items:center;gap:8px;background:#0b132a;border:1px solid #213055;color:#93c5fd;padding:6px 10px;border-radius:999px;font-weight:600}
-    .table{width:100%;border-collapse:collapse;margin-top:10px}
-    .table th,.table td{padding:12px;border-bottom:1px solid #243453;text-align:left}
-    .table th{color:#93c5fd;font-weight:700}
-    .table td{color:#e2e8f0}
-    .economy{color:var(--accent);font-weight:700}
-    .note{color:#94a3b8;font-size:.95rem}
-    .cta-bar{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;border-radius:16px;padding:18px;background:#0b132a;border:1px dashed #2c3b6b;margin-top:22px}
-    footer{margin:32px 0 6px 0;color:#94a3b8;font-size:.92rem}
-    .contact{display:grid;gap:10px}
-    .qr{background:#fff;border-radius:16px;padding:10px;display:inline-block}
-    .muted{color:#94a3b8}
-      /* ===== Mobile refinamentos ===== */
-    .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:10px}
-    .table{width:100%;min-width:560px}
-    .table th,.table td{white-space:nowrap}
-    @media (max-width: 600px){
-      .container{padding:16px}
-      .hero{grid-template-columns:1fr;padding:22px;border-radius:18px}
-      .card{padding:16px;border-radius:16px}
-      .btn{padding:12px 14px;font-weight:700}
-      h1{font-size:clamp(24px,8vw,30px)}
-      h2{font-size:clamp(18px,6vw,22px)}
-      .cta-bar{flex-direction:column;align-items:flex-start}
-    }
-  </style>
+<meta charset="utf-8">
+<title>Portfólio Comercial — Wriell Gama Oliveira</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  /* ===== Paleta ===== */
+  :root{
+    --bg:#070a14;        /* fundo geral */
+    --card:#0b1020;      /* cartões */
+    --ink:#e5e7eb;       /* texto principal */
+    --muted:#94a3b8;     /* texto suave */
+    --brand:#3b82f6;     /* azul */
+    --brand-2:#1e40af;   /* azul profundo */
+    --accent:#22c55e;    /* verde */
+    --line:#1f2a44;      /* bordas */
+  }
+
+  @page{
+    size: A4 landscape;
+    margin: 0;
+  }
+  @media print{
+    html,body{width:297mm;height:210mm}
+    .page{page-break-after: always;}
+    .no-break{break-inside: avoid;}
+  }
+  html,body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+  }
+  .canvas{
+    width: 100%;
+    min-height: 100vh;
+    padding: 20mm 18mm;
+    box-sizing: border-box;
+  }
+  .grid{
+    display: grid;
+    gap: 14px;
+  }
+  .grid-2{
+    grid-template-columns: 1.2fr 1fr;
+  }
+  .card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px 18px;
+  }
+  .tag{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .08em;
+    color: #93c5fd;
+    background: #0b132a;
+    border: 1px solid var(--line);
+    padding: 6px 10px;
+    border-radius: 999px;
+  }
+  h1{font-size: 32px; margin: 10px 0 6px 0;}
+  h2{font-size: 22px; margin: 8px 0 6px 0;}
+  h3{font-size: 16px; margin: 6px 0 6px 0;}
+  p{margin: 6px 0;}
+  .muted{color: var(--muted)}
+  .hero{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 16px;
+    background: linear-gradient(135deg,#0b1020,#0f1d46 35%,#1e3a8a 90%);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 18px;
+  }
+  .hero img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+  }
+  .list{margin: 8px 0 0 0; padding-left: 16px}
+  .list li{margin: 6px 0}
+  .pill{
+    display:inline-block;border:1px solid var(--line);border-radius:999px;
+    padding:10px 14px;background:#0b132a;color:#93c5fd;font-weight:700
+  }
+  .cta-row{
+    display:flex;gap:10px;flex-wrap:wrap;margin-top:10px
+  }
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;border-radius:12px;
+    padding:12px 16px;border:1px solid var(--line)
+  }
+  .btn-primary{background:var(--brand);color:#fff;border-color:var(--brand-2)}
+  .btn-outline{background:transparent;color:var(--ink)}
+  .kpi{
+    display:flex;gap:10px;flex-wrap:wrap;margin-top:6px
+  }
+  .kpi .chip{
+    border:1px solid var(--line);background:#0f1222;color:#cbd5e1;border-radius:10px;
+    padding:8px 10px;font-size:12px
+  }
+  .photo{
+    width:100%;height:100%;display:block;object-fit:cover;border-radius:14px;border:1px solid var(--line)
+  }
+
+  /* Tabela de preços */
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
+  table{border-collapse:collapse;width:100%;min-width:780px}
+  thead th{
+    background: var(--brand-2); color:#fff; text-align:left; padding:10px;
+    border-bottom:1px solid var(--line)
+  }
+  tbody td{
+    padding:10px;border-bottom:1px solid var(--line);background:#0f1222;color:var(--ink)
+  }
+  tbody tr:nth-child(even) td{background:#10162a}
+  .ok{color:#22c55e;font-weight:700}
+  .qr{
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap
+  }
+  .qr img{
+    width:140px;height:140px;display:block;border-radius:12px;border:1px solid var(--line);background:#fff
+  }
+  .center{text-align:center}
+  .right{text-align:right}
+  .page-title{font-size:18px;margin:0 0 8px 0;color:#93c5fd;letter-spacing:.06em}
+</style>
 </head>
 <body>
-  <div class="container">
-    <!-- HERO -->
-    <header class="hero">
-      <div>
-        <span class="tag">Portfólio Comercial</span>
-        <h1>Transforme sua Gestão Fiscal</h1>
-        <p>Treinamento especializado e diagnóstico fiscal para ganhar produtividade, reduzir erros e manter 100% de compliance.</p>
-        <div class="cta">
-          <a class="btn btn-primary" href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
-          <a class="btn btn-outline" href="#planos">Ver planos & preços</a>
-        </div>
-      </div>
-      <div class="card">
-        <h3 style="margin:0 0 6px 0">Benefícios garantidos</h3>
-        <ul class="list">
-          <li>✅ Redução de erros operacionais</li>
-          <li>✅ Aumento da produtividade</li>
-          <li>✅ Compliance fiscal contínuo</li>
-          <li>✅ ROI comprovado</li>
-        </ul>
-      </div>
-    </header><!-- DIAGNOSTICO -->
-<section class="section card" id="diagnostico">
-  <h2>Diagnóstico Fiscal Personalizado</h2>
-  <p style="margin:0">Descubra as oportunidades de melhoria antes de investir.</p>
-  <ul class="list">
-    <li>🗓️ Call personalizada para acesso e análise completa do seu sistema</li>
-    <li>📝 Relatório detalhado entregue em até <strong>5 dias úteis</strong></li>
-    <li>⏱️ Estimativa precisa de <strong>horas necessárias</strong> para otimização</li>
-  </ul>
-  <p style="margin-top:8px"><strong>Valor:</strong> <strong>R$ 200,00</strong> — <span class="economy">Investimento 100% dedutível do treinamento</span></p>
-</section>
 
-<!-- SOBRE MIM -->
-<section class="section card" id="sobre">
-  <span class="tag">Quem sou</span>
-  <h2>Wriell Gama Oliveira</h2>
-  <p class="muted" style="margin-top:0">Consultor Especialista em Domínio Sistemas | Automação e Treinamento Técnico</p>
-  <div class="grid grid-2">
+<!-- =================== PÁGINA 1 — CAPA =================== -->
+<section class="canvas page">
+  <div class="hero">
     <div>
-      <p><strong>Transforme o Domínio Sistemas na ferramenta mais poderosa do seu escritório.</strong> Com mais de 15 anos de experiência contábil e domínio profundo do sistema Domínio (Thomson Reuters), ajudo a eliminar erros, automatizar processos e aumentar a produtividade.</p>
-      <ul class="list">
-        <li>• Redução de retrabalho em fechamentos e obrigações acessórias</li>
-        <li>• Otimização de parametrizações nos módulos Fiscal, Contábil e Folha</li>
-        <li>• Integração eficiente entre sistemas e departamentos</li>
-        <li>• Treinamentos técnicos que elevam a performance da equipe</li>
-      </ul>
+      <span class="tag">Portfólio Comercial</span>
+      <h1>Wriell Gama Oliveira</h1>
+      <h2>Consultor Especialista em Domínio Sistemas</h2>
+      <p class="muted">Transforme sua Gestão Fiscal — diagnósticos, parametrização e treinamentos para produtividade e compliance.</p>
+      <div class="kpi">
+        <span class="chip">15+ anos de experiência</span>
+        <span class="chip">Domínio (Thomson Reuters)</span>
+        <span class="chip">Automação & Treinamentos</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">💬 Falar no WhatsApp</a>
+        <a class="btn btn-outline" href="#planos">Ver planos & preços</a>
+      </div>
     </div>
-    <div class="card" style="background:rgba(59,130,246,.06);border-color:#1e3a8a">
-      <h3 style="margin:0 0 8px 0">Serviços Oferecidos</h3>
-      <ul class="list">
-        <li><strong>Consultoria Técnica e Parametrização</strong> — Implementação, configuração de dados e integração.</li>
-        <li><strong>Treinamentos Técnicos Especializados</strong> — Iniciantes e avançados; módulos Fiscal, Contábil e Folha; mentoria setorial.</li>
-        <li><strong>Soluções em Automação e IA</strong> — Fluxos inteligentes, análise de dados e relatórios automatizados.</li>
-      </ul>
-      <h3 style="margin:8px 0 8px 0">Diferenciais Competitivos</h3>
-      <ul class="list">
-        <li>• <strong>Visão Híbrida</strong>: CRC ativo + profundidade técnica em Domínio.</li>
-        <li>• <strong>Metodologia Prática</strong>: foco em eficiência e redução de custos.</li>
-        <li>• <strong>Resultados Comprovados</strong>: ganhos reais de produtividade e eliminação de erros críticos.</li>
-      </ul>
+    <div>
+      <!-- TROCAR pelo arquivo da foto do evento no CRC -->
+      <img class="photo" src="FOTO-CRC.jpg" alt="Wriell no evento do CRC">
     </div>
   </div>
 </section>
 
-<!-- PLANOS -->
-<section class="section card" id="planos">
-  <h2>Treinamento — Carga Horária Flexível com Desconto Progressivo</h2>
+<!-- =================== PÁGINA 2 — SOBRE + CONSULTORIA =================== -->
+<section class="canvas page">
   <div class="grid grid-2">
-    <div>
-      <div class="table-wrap"><table class="table" aria-label="Tabela de preços e economia por pacote de horas">
+    <div class="card no-break">
+      <span class="page-title">SOBRE MIM</span>
+      <h2>Quem sou</h2>
+      <p class="muted">Consultor Especialista em Domínio Sistemas | Automação e Treinamento Técnico</p>
+      <p><strong>Transforme o Domínio Sistemas</strong> na ferramenta mais poderosa do seu escritório. Tenho mais de 15 anos de experiência contábil e domínio profundo do sistema Domínio (Thomson Reuters). Meu foco é eliminar erros, automatizar processos e escalar produtividade.</p>
+      <ul class="list">
+        <li>Redução de retrabalho em fechamentos e obrigações acessórias</li>
+        <li>Otimização de parametrizações (Fiscal, Contábil e Folha)</li>
+        <li>Integração eficiente entre sistemas e departamentos</li>
+        <li>Treinamentos técnicos para operação com excelência</li>
+      </ul>
+    </div>
+    <div class="card no-break" style="padding:0">
+      <!-- TROCAR pela foto em ambiente de trabalho/escritório -->
+      <img class="photo" src="FOTO-ESCRITORIO.jpg" alt="Wriell em ambiente de trabalho">
+    </div>
+  </div>
+
+  <div class="grid" style="margin-top:14px">
+    <div class="card no-break">
+      <span class="page-title">CONSULTORIA & TREINAMENTOS</span>
+      <div class="grid" style="grid-template-columns: 1fr 1.1fr; gap: 14px;">
+        <div>
+          <h3>Consultoria Técnica e Parametrização</h3>
+          <p>Implementação do Domínio, configuração de dados, integração de sistemas e revisão de parametrizações.</p>
+          <h3>Treinamentos Técnicos Especializados</h3>
+          <p>Capacitação para iniciantes e avançados; mentoria em Fiscal, Contábil e Folha; orientação setorial.</p>
+          <h3>Soluções em Automação e IA</h3>
+          <p>Fluxos inteligentes, análises e relatórios automatizados para acelerar entregas e reduzir erros.</p>
+        </div>
+        <div class="card" style="padding:0;background:rgba(59,130,246,.06);border-color:var(--brand-2)">
+          <!-- TROCAR pela foto de terno -->
+          <img class="photo" src="FOTO-TERNO.jpg" alt="Wriell em traje social">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PÁGINA 3 — VISÃO + PLANOS =================== -->
+<section class="canvas page" id="planos">
+  <div class="grid grid-2">
+    <div class="card no-break">
+      <span class="page-title">VISÃO & ESTILO</span>
+      <h2>Eficiência com excelência</h2>
+      <p>Metodologia prática, foco em eficiência e redução de custos, com resultados comprovados em produtividade e eliminação de erros críticos.</p>
+      <div class="pill">CRC ativo • Profundidade técnica em Domínio</div>
+      <ul class="list">
+        <li>Diagnóstico ágil com relatório em até <strong>5 dias úteis</strong></li>
+        <li>Parametrizações cirúrgicas (Fiscal, Contábil e Folha)</li>
+        <li>Treinamentos mão na massa (usuários e líderes)</li>
+      </ul>
+    </div>
+    <div class="card no-break" style="padding:0">
+      <!-- TROCAR pela foto na ponte -->
+      <img class="photo" src="FOTO-PONTE.jpg" alt="Wriell — visão e estilo">
+    </div>
+  </div>
+
+  <div class="card no-break" style="margin-top:14px">
+    <span class="page-title">PLANOS & INVESTIMENTOS</span>
+    <div class="table-wrap">
+      <table aria-label="Tabela de preços">
         <thead>
-          <tr><th>Carga horária</th><th>Investimento</th><th>Valor/hora</th><th>Economia</th></tr>
+          <tr>
+            <th>Carga horária</th><th>Investimento</th><th>Valor/hora</th><th>Economia</th>
+          </tr>
         </thead>
         <tbody>
           <tr><td>1 hora</td><td>R$ 250,00</td><td>R$ 250,00</td><td>-</td></tr>
@@ -159,68 +241,35 @@
           <tr><td>7 horas</td><td>R$ 1.365,00</td><td>R$ 195,00</td><td>Economize R$ 385</td></tr>
           <tr><td>8 horas</td><td>R$ 1.520,00</td><td>R$ 190,00</td><td>Economize R$ 480</td></tr>
           <tr><td>9 horas</td><td>R$ 1.665,00</td><td>R$ 185,00</td><td>Economize R$ 585</td></tr>
-          <tr><td>10+ horas</td><td>R$ 180,00/hora</td><td>R$ 180,00</td><td>Economia até 28%</td></tr>
+          <tr><td>10+ horas</td><td>R$ 180,00/hora</td><td>R$ 180,00</td><td class="ok">Economia até 28%</td></tr>
         </tbody>
-      </table></div>
+      </table>
     </div>
-    <div>
-      <div class="card" style="background:rgba(34,197,94,.06);border-color:#245a3b">
-        <h3 style="margin:0 0 8px 0">Combo Inteligente</h3>
-        <p style="margin:0">Diagnóstico + 4h de treinamento</p>
-        <p style="margin:4px 0 0 0"><s>R$ 1.100,00</s> <strong>R$ 1.050,00</strong></p>
-        <p class="economy" style="margin:6px 0 0 0">Economize R$ 50,00 + roadmap completo</p>
-      </div>
-      <div class="card" style="margin-top:12px">
-        <h3 style="margin:0 0 8px 0">Pacote Corporativo (equipes)</h3>
-        <ul class="list">
-          <li>2–5 pessoas: acréscimo de <strong>30%</strong> no valor base</li>
-          <li>6–10 pessoas: acréscimo de <strong>50%</strong> no valor base</li>
-        </ul>
-      </div>
-    </div>
+    <p style="margin-top:8px"><strong>Combo Inteligente:</strong> Diagnóstico + 4h — <s>R$ 1.100,00</s> por <strong>R$ 1.050,00</strong> <span class="ok">(+ economia R$ 50,00)</span></p>
+    <p class="muted">Pacote corporativo: 2–5 pessoas +30% • 6–10 pessoas +50% • Online (–10%), Presencial (+ despesas) ou Híbrido.</p>
   </div>
-  <div class="note">Modalidades: <strong>online (–10%)</strong>, <strong>presencial</strong> (+ despesas de deslocamento) ou <strong>híbrido</strong>.</div>
 </section>
 
-<!-- GARANTIAS -->
-<section class="section grid grid-3">
-  <div class="card">
-    <h2 style="margin-bottom:6px">Garantias & Diferenciais</h2>
-    <ul class="list">
-      <li>✅ Material didático incluso e atualizado</li>
-      <li>✅ Ajustes extras e suporte em todos os módulos</li>
-      <li>✅ Suporte pós‑treinamento via WhatsApp</li>
-      <li>✅ Horas não utilizadas podem ser redirecionadas</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h2 style="margin-bottom:6px">Deslocamento</h2>
-    <p>Para treinamentos presenciais que exijam viagem, despesas de transporte, hospedagem e alimentação são de responsabilidade da empresa contratante. Enviamos orçamento detalhado previamente.</p>
-  </div>
-  <div class="card contact">
-    <h2>Contato</h2>
+<!-- =================== PÁGINA 4 — CONTATO =================== -->
+<section class="canvas page">
+  <div class="card no-break">
+    <span class="page-title">CONTATO</span>
+    <h2>Vamos destravar seus resultados</h2>
     <p><strong>Wriell Gama Oliveira</strong><br>Consultor Contábil de Tecnologia, Integração e Implantação</p>
-    <p>📞 <a href="tel:+5563992038278">+55 63 99203‑8278</a><br>
-       💬 <a href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">Converse no WhatsApp</a></p>
-    <div class="muted">Validade da proposta: 30 dias a partir do envio.</div>
+    <p>📞 +55 63 99203-8278</p>
+    <div class="qr" style="margin-top:6px">
+      <!-- TROCAR pelo arquivo do seu QR se quiser usar imagem local -->
+      <img src="QR-WHATSAPP.jpg" alt="QR WhatsApp">
+      <div>
+        <p class="muted">Escaneie o QR ou clique no botão:</p>
+        <p><a class="btn btn-primary" href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">📲 Falar no WhatsApp</a></p>
+        <p><a href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">https://wa.me/message/BM4GUNJSSCSEH1</a></p>
+        <p class="muted">Validade da proposta: 30 dias a partir do envio.</p>
+      </div>
+    </div>
   </div>
+  <p class="center muted" style="margin-top:10px">© <script>document.write(new Date().getFullYear())</script> Wriell Oliveira Consultor — Todos os direitos reservados.</p>
 </section>
 
-<!-- CTA FINAL -->
-<div class="cta-bar">
-  <div>
-    <strong>Pronto para transformar sua gestão fiscal?</strong>
-    <div class="muted">Agende o diagnóstico e receba um roadmap personalizado em até 5 dias úteis.</div>
-  </div>
-  <a class="btn btn-primary" href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">📲 Agendar no WhatsApp</a>
-</div>
-
-<footer>
-  <p>© <span id="year"></span> Wriell Oliveira Consultor — Todos os direitos reservados.</p>
-  <p class="muted">Esta proposta é informativa e não constitui documento fiscal.</p>
-</footer>
-
-  </div>
-  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
