@@ -6,26 +6,53 @@
   <title>Portfólio — Wriell Gama Oliveira</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: "Segoe UI", Arial, sans-serif;
       background-color: #0b0c10;
       color: #ffffff;
       margin: 0;
       padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(90deg, #1f2833, #0b0c10);
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    }
+
+    header h1 {
+      margin: 0;
+      color: #66fcf1;
+      font-size: 1.8em;
+    }
+
+    header h2 {
+      color: #c5c6c7;
+      font-weight: normal;
+      font-size: 1em;
+      margin-top: 5px;
     }
 
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
+      max-width: 900px;
+      margin: auto;
     }
 
-    h1, h2, h3 {
-      color: #66fcf1;
-      margin-bottom: 10px;
+    .card {
+      background-color: #1f2833;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      padding: 30px 20px;
+      margin: 40px 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    p, li {
-      color: #c5c6c7;
-      line-height: 1.6;
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
     }
 
     img {
@@ -33,10 +60,37 @@
       height: auto;
       border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
     }
 
-    .foto-principal, .foto-sobre, .foto-consultoria, .foto-visao {
-      margin-bottom: 20px;
+    img:hover {
+      transform: scale(1.03);
+    }
+
+    h3 {
+      color: #66fcf1;
+      margin-bottom: 15px;
+      font-size: 1.4em;
+    }
+
+    p, li {
+      color: #c5c6c7;
+      line-height: 1.6;
+      font-size: 1em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: rgba(102, 252, 241, 0.1);
+      border-left: 3px solid #66fcf1;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
     }
 
     .qr {
@@ -45,41 +99,98 @@
     }
 
     a {
-      color: #66fcf1;
+      color: #0b0c10;
       text-decoration: none;
       font-weight: bold;
-      background-color: #1f2833;
-      padding: 10px 18px;
+      background-color: #66fcf1;
+      padding: 12px 22px;
       border-radius: 8px;
       display: inline-block;
-      margin-top: 15px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
     a:hover {
       background-color: #45a29e;
-      color: #0b0c10;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #1f2833;
+      color: #c5c6c7;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 40px;
+      border-top: 1px solid #45a29e;
     }
 
     @media (max-width: 768px) {
-      h1 { font-size: 1.6em; }
-      h2 { font-size: 1.2em; }
-      h3 { font-size: 1em; }
-      section { padding: 25px 10px; }
+      header h1 { font-size: 1.4em; }
+      section { padding: 30px 15px; }
+      .card { padding: 20px 15px; }
+      h3 { font-size: 1.2em; }
     }
   </style>
 </head>
 
 <body>
-  <!-- Seção: Capa -->
-  <section class="capa">
-    <img src="Imagens/FOTO-CRC.jpg" alt="Wriell no evento do CRC" class="foto-principal">
+  <header>
     <h1>Wriell Gama Oliveira</h1>
     <h2>Consultor Especialista em Domínio Sistemas</h2>
-    <p>
-      Transforme sua Gestão Fiscal — diagnósticos, parametrização e treinamentos para maximizar resultados com segurança e compliance.
-    </p>
+  </header>
+
+  <!-- Seção: Capa -->
+  <section>
+    <div class="card">
+      <img src="Imagens/FOTO-CRC.jpg" alt="Wriell no evento do CRC">
+      <p>Transforme sua Gestão Fiscal — diagnósticos, parametrização e treinamentos para maximizar resultados com segurança e compliance.</p>
+    </div>
   </section>
 
   <!-- Seção: Sobre Mim -->
-  <section class="sobre">
-    <img src="Imagens/FOTO-ESCRITORIO.jpg" alt="Wriell no escritório" class="foto-sobre">
+  <section>
+    <div class="card">
+      <img src="Imagens/FOTO-ESCRITORIO.jpg" alt="Wriell no escritório">
+      <h3>Sobre Mim</h3>
+      <p>Com mais de 15 anos de experiência contábil e domínio profundo do sistema Domínio (Thomson Reuters),
+      ofereço soluções técnicas e estratégicas para eliminar erros, automatizar processos e aumentar a produtividade.</p>
+    </div>
+  </section>
+
+  <!-- Seção: Consultoria e Treinamentos -->
+  <section>
+    <div class="card">
+      <img src="Imagens/FOTO-TERNO.jpg" alt="Wriell consultor">
+      <h3>Consultoria & Treinamentos</h3>
+      <ul>
+        <li>Redução de retrabalho e erros operacionais</li>
+        <li>Otimização dos módulos Fiscal, Contábil e Folha</li>
+        <li>Treinamentos técnicos sob medida</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Seção: Visão & Estilo -->
+  <section>
+    <div class="card">
+      <img src="Imagens/FOTO-PONTE.jpg" alt="Wriell olhando o horizonte">
+      <h3>Visão & Estilo</h3>
+      <p>Minha abordagem é prática e personalizada — unir tecnologia e gestão humana para resultados reais.</p>
+    </div>
+  </section>
+
+  <!-- Seção: Contato -->
+  <section>
+    <div class="card">
+      <img src="Imagens/QR-WHATSAPP.jpg" alt="QR para WhatsApp" class="qr">
+      <p>Entre em contato direto comigo no WhatsApp</p>
+      <a href="https://wa.me/5563999999999" target="_blank">💬 Falar no WhatsApp</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Wriell Gama Oliveira — Consultor em Domínio Sistemas</p>
+  </footer>
+</body>
+</html>
