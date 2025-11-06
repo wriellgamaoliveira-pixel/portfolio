@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -60,6 +59,19 @@
     .contact{display:grid;gap:10px}
     .qr{background:#fff;border-radius:16px;padding:10px;display:inline-block}
     .muted{color:#94a3b8}
+      /* ===== Mobile refinamentos ===== */
+    .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:10px}
+    .table{width:100%;min-width:560px}
+    .table th,.table td{white-space:nowrap}
+    @media (max-width: 600px){
+      .container{padding:16px}
+      .hero{grid-template-columns:1fr;padding:22px;border-radius:18px}
+      .card{padding:16px;border-radius:16px}
+      .btn{padding:12px 14px;font-weight:700}
+      h1{font-size:clamp(24px,8vw,30px)}
+      h2{font-size:clamp(18px,6vw,22px)}
+      .cta-bar{flex-direction:column;align-items:flex-start}
+    }
   </style>
 </head>
 <body>
@@ -84,99 +96,130 @@
           <li>✅ ROI comprovado</li>
         </ul>
       </div>
-    </header>
+    </header><!-- DIAGNOSTICO -->
+<section class="section card" id="diagnostico">
+  <h2>Diagnóstico Fiscal Personalizado</h2>
+  <p style="margin:0">Descubra as oportunidades de melhoria antes de investir.</p>
+  <ul class="list">
+    <li>🗓️ Call personalizada para acesso e análise completa do seu sistema</li>
+    <li>📝 Relatório detalhado entregue em até <strong>5 dias úteis</strong></li>
+    <li>⏱️ Estimativa precisa de <strong>horas necessárias</strong> para otimização</li>
+  </ul>
+  <p style="margin-top:8px"><strong>Valor:</strong> <strong>R$ 200,00</strong> — <span class="economy">Investimento 100% dedutível do treinamento</span></p>
+</section>
 
-    <!-- DIAGNOSTICO -->
-    <section class="section card" id="diagnostico">
-      <h2>Diagnóstico Fiscal Personalizado</h2>
-      <p style="margin:0">Descubra as oportunidades de melhoria antes de investir.</p>
+<!-- SOBRE MIM -->
+<section class="section card" id="sobre">
+  <span class="tag">Quem sou</span>
+  <h2>Wriell Gama Oliveira</h2>
+  <p class="muted" style="margin-top:0">Consultor Especialista em Domínio Sistemas | Automação e Treinamento Técnico</p>
+  <div class="grid grid-2">
+    <div>
+      <p><strong>Transforme o Domínio Sistemas na ferramenta mais poderosa do seu escritório.</strong> Com mais de 15 anos de experiência contábil e domínio profundo do sistema Domínio (Thomson Reuters), ajudo a eliminar erros, automatizar processos e aumentar a produtividade.</p>
       <ul class="list">
-        <li>🗓️ Call personalizada para acesso e análise completa do seu sistema</li>
-        <li>📝 Relatório detalhado entregue em até <strong>5 dias úteis</strong></li>
-        <li>⏱️ Estimativa precisa de <strong>horas necessárias</strong> para otimização</li>
+        <li>• Redução de retrabalho em fechamentos e obrigações acessórias</li>
+        <li>• Otimização de parametrizações nos módulos Fiscal, Contábil e Folha</li>
+        <li>• Integração eficiente entre sistemas e departamentos</li>
+        <li>• Treinamentos técnicos que elevam a performance da equipe</li>
       </ul>
-      <p style="margin-top:8px"><strong>Valor:</strong> <strong>R$ 200,00</strong> — <span class="economy">Investimento 100% dedutível do treinamento</span></p>
-    </section>
+    </div>
+    <div class="card" style="background:rgba(59,130,246,.06);border-color:#1e3a8a">
+      <h3 style="margin:0 0 8px 0">Serviços Oferecidos</h3>
+      <ul class="list">
+        <li><strong>Consultoria Técnica e Parametrização</strong> — Implementação, configuração de dados e integração.</li>
+        <li><strong>Treinamentos Técnicos Especializados</strong> — Iniciantes e avançados; módulos Fiscal, Contábil e Folha; mentoria setorial.</li>
+        <li><strong>Soluções em Automação e IA</strong> — Fluxos inteligentes, análise de dados e relatórios automatizados.</li>
+      </ul>
+      <h3 style="margin:8px 0 8px 0">Diferenciais Competitivos</h3>
+      <ul class="list">
+        <li>• <strong>Visão Híbrida</strong>: CRC ativo + profundidade técnica em Domínio.</li>
+        <li>• <strong>Metodologia Prática</strong>: foco em eficiência e redução de custos.</li>
+        <li>• <strong>Resultados Comprovados</strong>: ganhos reais de produtividade e eliminação de erros críticos.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <!-- PLANOS -->
-    <section class="section card" id="planos">
-      <h2>Treinamento — Carga Horária Flexível com Desconto Progressivo</h2>
-      <div class="grid grid-2">
-        <div>
-          <table class="table" aria-label="Tabela de preços e economia por pacote de horas">
-            <thead>
-              <tr><th>Carga horária</th><th>Investimento</th><th>Valor/hora</th><th>Economia</th></tr>
-            </thead>
-            <tbody>
-              <tr><td>1 hora</td><td>R$ 250,00</td><td>R$ 250,00</td><td>-</td></tr>
-              <tr><td>2 horas</td><td>R$ 490,00</td><td>R$ 245,00</td><td>Economize R$ 10</td></tr>
-              <tr><td>3 horas</td><td>R$ 705,00</td><td>R$ 235,00</td><td>Economize R$ 45</td></tr>
-              <tr><td>4 horas</td><td>R$ 900,00</td><td>R$ 225,00</td><td>Economize R$ 100</td></tr>
-              <tr><td>5 horas</td><td>R$ 1.075,00</td><td>R$ 215,00</td><td>Economize R$ 175</td></tr>
-              <tr><td>6 horas</td><td>R$ 1.230,00</td><td>R$ 205,00</td><td>Economize R$ 270</td></tr>
-              <tr><td>7 horas</td><td>R$ 1.365,00</td><td>R$ 195,00</td><td>Economize R$ 385</td></tr>
-              <tr><td>8 horas</td><td>R$ 1.520,00</td><td>R$ 190,00</td><td>Economize R$ 480</td></tr>
-              <tr><td>9 horas</td><td>R$ 1.665,00</td><td>R$ 185,00</td><td>Economize R$ 585</td></tr>
-              <tr><td>10+ horas</td><td>R$ 180,00/hora</td><td>R$ 180,00</td><td>Economia até 28%</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <div>
-          <div class="card" style="background:rgba(34,197,94,.06);border-color:#245a3b">
-            <h3 style="margin:0 0 8px 0">Combo Inteligente</h3>
-            <p style="margin:0">Diagnóstico + 4h de treinamento</p>
-            <p style="margin:4px 0 0 0"><s>R$ 1.100,00</s> <strong>R$ 1.050,00</strong></p>
-            <p class="economy" style="margin:6px 0 0 0">Economize R$ 50,00 + roadmap completo</p>
-          </div>
-          <div class="card" style="margin-top:12px">
-            <h3 style="margin:0 0 8px 0">Pacote Corporativo (equipes)</h3>
-            <ul class="list">
-              <li>2–5 pessoas: acréscimo de <strong>30%</strong> no valor base</li>
-              <li>6–10 pessoas: acréscimo de <strong>50%</strong> no valor base</li>
-            </ul>
-          </div>
-        </div>
+<!-- PLANOS -->
+<section class="section card" id="planos">
+  <h2>Treinamento — Carga Horária Flexível com Desconto Progressivo</h2>
+  <div class="grid grid-2">
+    <div>
+      <div class="table-wrap"><table class="table" aria-label="Tabela de preços e economia por pacote de horas">
+        <thead>
+          <tr><th>Carga horária</th><th>Investimento</th><th>Valor/hora</th><th>Economia</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1 hora</td><td>R$ 250,00</td><td>R$ 250,00</td><td>-</td></tr>
+          <tr><td>2 horas</td><td>R$ 490,00</td><td>R$ 245,00</td><td>Economize R$ 10</td></tr>
+          <tr><td>3 horas</td><td>R$ 705,00</td><td>R$ 235,00</td><td>Economize R$ 45</td></tr>
+          <tr><td>4 horas</td><td>R$ 900,00</td><td>R$ 225,00</td><td>Economize R$ 100</td></tr>
+          <tr><td>5 horas</td><td>R$ 1.075,00</td><td>R$ 215,00</td><td>Economize R$ 175</td></tr>
+          <tr><td>6 horas</td><td>R$ 1.230,00</td><td>R$ 205,00</td><td>Economize R$ 270</td></tr>
+          <tr><td>7 horas</td><td>R$ 1.365,00</td><td>R$ 195,00</td><td>Economize R$ 385</td></tr>
+          <tr><td>8 horas</td><td>R$ 1.520,00</td><td>R$ 190,00</td><td>Economize R$ 480</td></tr>
+          <tr><td>9 horas</td><td>R$ 1.665,00</td><td>R$ 185,00</td><td>Economize R$ 585</td></tr>
+          <tr><td>10+ horas</td><td>R$ 180,00/hora</td><td>R$ 180,00</td><td>Economia até 28%</td></tr>
+        </tbody>
+      </table></div>
+    </div>
+    <div>
+      <div class="card" style="background:rgba(34,197,94,.06);border-color:#245a3b">
+        <h3 style="margin:0 0 8px 0">Combo Inteligente</h3>
+        <p style="margin:0">Diagnóstico + 4h de treinamento</p>
+        <p style="margin:4px 0 0 0"><s>R$ 1.100,00</s> <strong>R$ 1.050,00</strong></p>
+        <p class="economy" style="margin:6px 0 0 0">Economize R$ 50,00 + roadmap completo</p>
       </div>
-      <div class="note">Modalidades: <strong>online (–10%)</strong>, <strong>presencial</strong> (+ despesas de deslocamento) ou <strong>híbrido</strong>.</div>
-    </section>
-
-    <!-- GARANTIAS -->
-    <section class="section grid grid-3">
-      <div class="card">
-        <h2 style="margin-bottom:6px">Garantias & Diferenciais</h2>
+      <div class="card" style="margin-top:12px">
+        <h3 style="margin:0 0 8px 0">Pacote Corporativo (equipes)</h3>
         <ul class="list">
-          <li>✅ Material didático incluso e atualizado</li>
-          <li>✅ Ajustes extras e suporte em todos os módulos</li>
-          <li>✅ Suporte pós‑treinamento via WhatsApp</li>
-          <li>✅ Horas não utilizadas podem ser redirecionadas</li>
+          <li>2–5 pessoas: acréscimo de <strong>30%</strong> no valor base</li>
+          <li>6–10 pessoas: acréscimo de <strong>50%</strong> no valor base</li>
         </ul>
       </div>
-      <div class="card">
-        <h2 style="margin-bottom:6px">Deslocamento</h2>
-        <p>Para treinamentos presenciais que exijam viagem, despesas de transporte, hospedagem e alimentação são de responsabilidade da empresa contratante. Enviamos orçamento detalhado previamente.</p>
-      </div>
-      <div class="card contact">
-        <h2>Contato</h2>
-        <p><strong>Wriell Gama Oliveira</strong><br>Consultor Contábil de Tecnologia, Integração e Implantação</p>
-        <p>📞 <a href="tel:+5563992038278">+55 63 99203‑8278</a><br>
-           💬 <a href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">Converse no WhatsApp</a></p>
-        <div class="muted">Validade da proposta: 30 dias a partir do envio.</div>
-      </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <div class="cta-bar">
-      <div>
-        <strong>Pronto para transformar sua gestão fiscal?</strong>
-        <div class="muted">Agende o diagnóstico e receba um roadmap personalizado em até 5 dias úteis.</div>
-      </div>
-      <a class="btn btn-primary" href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">📲 Agendar no WhatsApp</a>
     </div>
+  </div>
+  <div class="note">Modalidades: <strong>online (–10%)</strong>, <strong>presencial</strong> (+ despesas de deslocamento) ou <strong>híbrido</strong>.</div>
+</section>
 
-    <footer>
-      <p>© <span id="year"></span> Wriell Oliveira Consultor — Todos os direitos reservados.</p>
-      <p class="muted">Esta proposta é informativa e não constitui documento fiscal.</p>
-    </footer>
+<!-- GARANTIAS -->
+<section class="section grid grid-3">
+  <div class="card">
+    <h2 style="margin-bottom:6px">Garantias & Diferenciais</h2>
+    <ul class="list">
+      <li>✅ Material didático incluso e atualizado</li>
+      <li>✅ Ajustes extras e suporte em todos os módulos</li>
+      <li>✅ Suporte pós‑treinamento via WhatsApp</li>
+      <li>✅ Horas não utilizadas podem ser redirecionadas</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2 style="margin-bottom:6px">Deslocamento</h2>
+    <p>Para treinamentos presenciais que exijam viagem, despesas de transporte, hospedagem e alimentação são de responsabilidade da empresa contratante. Enviamos orçamento detalhado previamente.</p>
+  </div>
+  <div class="card contact">
+    <h2>Contato</h2>
+    <p><strong>Wriell Gama Oliveira</strong><br>Consultor Contábil de Tecnologia, Integração e Implantação</p>
+    <p>📞 <a href="tel:+5563992038278">+55 63 99203‑8278</a><br>
+       💬 <a href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">Converse no WhatsApp</a></p>
+    <div class="muted">Validade da proposta: 30 dias a partir do envio.</div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<div class="cta-bar">
+  <div>
+    <strong>Pronto para transformar sua gestão fiscal?</strong>
+    <div class="muted">Agende o diagnóstico e receba um roadmap personalizado em até 5 dias úteis.</div>
+  </div>
+  <a class="btn btn-primary" href="https://wa.me/message/BM4GUNJSSCSEH1" target="_blank" rel="noopener">📲 Agendar no WhatsApp</a>
+</div>
+
+<footer>
+  <p>© <span id="year"></span> Wriell Oliveira Consultor — Todos os direitos reservados.</p>
+  <p class="muted">Esta proposta é informativa e não constitui documento fiscal.</p>
+</footer>
+
   </div>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
