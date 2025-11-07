@@ -17,15 +17,6 @@
     --line:#1f2a44;      /* bordas */
   }
 
-  @page{
-    size: A4 landscape;
-    margin: 0;
-  }
-  @media print{
-    html,body{width:297mm;height:210mm}
-    .page{page-break-after: always;}
-    .no-break{break-inside: avoid;}
-  }
   html,body{
     background: var(--bg);
     color: var(--ink);
@@ -34,8 +25,7 @@
   }
   .canvas{
     width: 100%;
-    min-height: 100vh;
-    padding: 20mm 18mm;
+    padding: 20px 18px;
     box-sizing: border-box;
   }
   .grid{
@@ -50,6 +40,7 @@
     border: 1px solid var(--line);
     border-radius: 16px;
     padding: 16px 18px;
+    margin-bottom: 14px;
   }
   .tag{
     display: inline-block;
@@ -135,8 +126,8 @@
 </head>
 <body>
 
-<!-- =================== PÁGINA 1 — CAPA =================== -->
-<section class="canvas page">
+<!-- =================== SEÇÃO 1 — CAPA =================== -->
+<section class="canvas">
   <div class="hero">
     <div>
       <span class="tag">Portfólio Comercial</span>
@@ -160,10 +151,10 @@
   </div>
 </section>
 
-<!-- =================== PÁGINA 2 — SOBRE + CONSULTORIA =================== -->
-<section class="canvas page">
+<!-- =================== SEÇÃO 2 — SOBRE + CONSULTORIA =================== -->
+<section class="canvas">
   <div class="grid grid-2">
-    <div class="card no-break">
+    <div class="card">
       <span class="page-title">SOBRE MIM</span>
       <h2>Quem sou</h2>
       <p class="muted">Consultor Especialista em Domínio Sistemas | Automação e Treinamento Técnico</p>
@@ -175,14 +166,14 @@
         <li>Treinamentos técnicos para operação com excelência</li>
       </ul>
     </div>
-    <div class="card no-break" style="padding:0">
+    <div class="card" style="padding:0">
       <!-- Foto em ambiente de trabalho -->
       <img class="photo" src="Imagens/FOTO-ESCRITORIO.jpg" alt="Wriell em ambiente de trabalho" loading="lazy">
     </div>
   </div>
 
-  <div class="grid" style="margin-top:14px">
-    <div class="card no-break">
+  <div class="grid">
+    <div class="card">
       <span class="page-title">CONSULTORIA & TREINAMENTOS</span>
       <div class="grid" style="grid-template-columns: 1fr 1.1fr; gap: 14px;">
         <div>
@@ -202,10 +193,10 @@
   </div>
 </section>
 
-<!-- =================== PÁGINA 3 — VISÃO + PLANOS =================== -->
-<section class="canvas page" id="planos">
+<!-- =================== SEÇÃO 3 — VISÃO + PLANOS =================== -->
+<section class="canvas" id="planos">
   <div class="grid grid-2">
-    <div class="card no-break">
+    <div class="card">
       <span class="page-title">VISÃO & ESTILO</span>
       <h2>Eficiência com excelência</h2>
       <p>Metodologia prática, foco em eficiência e redução de custos, com resultados comprovados em produtividade e eliminação de erros críticos.</p>
@@ -216,13 +207,13 @@
         <li>Treinamentos mão na massa (usuários e líderes)</li>
       </ul>
     </div>
-    <div class="card no-break" style="padding:0">
+    <div class="card" style="padding:0">
       <!-- Foto na ponte -->
       <img class="photo" src="Imagens/FOTO-PONTE.jpg" alt="Wriell — visão e estilo" loading="lazy">
     </div>
   </div>
 
-  <div class="card no-break" style="margin-top:14px">
+  <div class="card" style="margin-top:14px">
     <span class="page-title">PLANOS & INVESTIMENTOS</span>
     <div class="table-wrap">
       <table aria-label="Tabela de preços">
@@ -250,9 +241,9 @@
   </div>
 </section>
 
-<!-- =================== PÁGINA 4 — CONTATO =================== -->
-<section class="canvas page">
-  <div class="card no-break">
+<!-- =================== SEÇÃO 4 — CONTATO =================== -->
+<section class="canvas">
+  <div class="card">
     <span class="page-title">CONTATO</span>
     <h2>Vamos destravar seus resultados</h2>
     <p><strong>Wriell Gama Oliveira</strong><br>Consultor Contábil de Tecnologia, Integração e Implantação</p>
