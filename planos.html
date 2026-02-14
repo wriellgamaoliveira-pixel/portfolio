@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Portfólio Comercial — Wriell Gama Oliveira</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  /* ===== Paleta ===== */
+  :root{
+    --bg:#070a14;        /* fundo geral */
+    --card:#0b1020;      /* cartões */
+    --ink:#e5e7eb;       /* texto principal */
+    --muted:#94a3b8;     /* texto suave */
+    --brand:#3b82f6;     /* azul */
+    --brand-2:#1e40af;   /* azul profundo */
+    --accent:#22c55e;    /* verde */
+    --line:#1f2a44;      /* bordas */
+  }
+
+  html,body{
+    background: var(--bg);
+    color: var(--ink);
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    margin: 0;
+  }
+  .canvas{
+    width: 100%;
+    padding: 20px 18px;
+    box-sizing: border-box;
+  }
+  .grid{
+    display: grid;
+    gap: 14px;
+  }
+  .grid-2{
+    grid-template-columns: 1.2fr 1fr;
+  }
+  .card{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 16px 18px;
+    margin-bottom: 14px;
+  }
+  .tag{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 11px;
+    letter-spacing: .08em;
+    color: #93c5fd;
+    background: #0b132a;
+    border: 1px solid var(--line);
+    padding: 6px 10px;
+    border-radius: 999px;
+  }
+  h1{font-size: 32px; margin: 10px 0 6px 0;}
+  h2{font-size: 22px; margin: 8px 0 6px 0;}
+  h3{font-size: 16px; margin: 6px 0 6px 0;}
+  p{margin: 6px 0;}
+  .muted{color: var(--muted)}
+  .hero{
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 16px;
+    background: linear-gradient(135deg,#0b1020,#0f1d46 35%,#1e3a8a 90%);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 18px;
+  }
+  .hero img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 14px;
+    border: 1px solid var(--line);
+  }
+  .list{margin: 8px 0 0 0; padding-left: 16px}
+  .list li{margin: 6px 0}
+  .pill{
+    display:inline-block;border:1px solid var(--line);border-radius:999px;
+    padding:10px 14px;background:#0b132a;color:#93c5fd;font-weight:700
+  }
+  .cta-row{
+    display:flex;gap:10px;flex-wrap:wrap;margin-top:10px
+  }
+  .btn{
+    display:inline-block;text-decoration:none;font-weight:700;border-radius:12px;
+    padding:12px 16px;border:1px solid var(--line)
+  }
+  .btn-primary{background:var(--brand);color:#fff;border-color:var(--brand-2)}
+  .btn-outline{background:transparent;color:var(--ink)}
+  .kpi{
+    display:flex;gap:10px;flex-wrap:wrap;margin-top:6px
+  }
+  .kpi .chip{
+    border:1px solid var(--line);background:#0f1222;color:#cbd5e1;border-radius:10px;
+    padding:8px 10px;font-size:12px
+  }
+  .photo{
+    width:100%;height:100%;display:block;object-fit:cover;border-radius:14px;border:1px solid var(--line)
+  }
+
+  /* Tabela de preços */
+  .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin-top:8px}
+  table{border-collapse:collapse;width:100%;min-width:780px}
+  thead th{
+    background: var(--brand-2); color:#fff; text-align:left; padding:10px;
+    border-bottom:1px solid var(--line)
+  }
+  tbody td{
+    padding:10px;border-bottom:1px solid var(--line);background:#0f1222;color:var(--ink)
+  }
+  tbody tr:nth-child(even) td{background:#10162a}
+  .ok{color:#22c55e;font-weight:700}
+  .qr{
+    display:flex;align-items:center;gap:14px;flex-wrap:wrap
+  }
+  .qr img{
+    width:140px;height:140px;display:block;border-radius:12px;border:1px solid var(--line);background:#fff
+  }
+  .center{text-align:center}
+  .right{text-align:right}
+  .page-title{font-size:18px;margin:0 0 8px 0;color:#93c5fd;letter-spacing:.06em}
+  
+  /* Estilos para o vídeo */
+  .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+  }
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+</style>
+</head>
+<body>
+<!-- =================== PÁGINA 1 — CAPA =================== -->
+<section class="canvas page">
+  <div class="hero">
+    <div>
+      <span class="tag">Portfólio Comercial</span>
+      <h1>Wriell Gama Oliveira</h1>
+      <h2>Consultor Especialista em Tecnologia Contábil</h2>
+      <p class="muted">Transforme sua Gestão Fiscal — diagnósticos, parametrização e treinamentos para produtividade e compliance.</p>
+      <div class="kpi">
+        <span class="chip">15+ anos de experiência</span>
+        <span class="chip">Domínio (Thomson Reuters)</span>
+        <span class="chip">Automação & Treinamentos</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="index.html">Inicio</a>
+        <a class="btn btn-outline" href="planos.html">Ver planos & preços</a>
+        <a class="btn btn-primary"  href="https://wa.me/p/4003975136338132/556392038278" target="_blank"   rel="noopener">  🛒 Fazer Pedido</a>
+        <a class="btn btn-primary" href="SOBRE.html">SOBRE MIM</a>
+      </div>
+    </div>
+    <div>
+      <!-- Foto do evento no CRC -->
+      <img class="photo" src="Imagens/FOTO-CRC.jpg" alt="Wriell no evento do CRC" loading="lazy">
+    </div>
+  </div>
+</section>
+<section class="canvas" id="planos">
+    <div class="card" style="margin-top:14px">
+    <span class="page-title">PLANOS & INVESTIMENTOS</span>
+    <div class="table-wrap">
+      <table aria-label="Tabela de preços">
+        <thead>
+          <tr>
+            <th>Carga horária</th><th>Investimento</th><th>Valor/hora</th><th>Economia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1 hora</td><td>R$ 250,00</td><td>R$ 250,00</td><td>-</td></tr>
+          <tr><td>2 horas</td><td>R$ 490,00</td><td>R$ 245,00</td><td>Economize R$ 10</td></tr>
+          <tr><td>3 horas</td><td>R$ 705,00</td><td>R$ 235,00</td><td>Economize R$ 45</td></tr>
+          <tr><td>4 horas</td><td>R$ 900,00</td><td>R$ 225,00</td><td>Economize R$ 100</td></tr>
+          <tr><td>5 horas</td><td>R$ 1.075,00</td><td>R$ 215,00</td><td>Economize R$ 175</td></tr>
+          <tr><td>6 horas</td><td>R$ 1.230,00</td><td>R$ 205,00</td><td>Economize R$ 270</td></tr>
+          <tr><td>7 horas</td><td>R$ 1.365,00</td><td>R$ 195,00</td><td>Economize R$ 385</td></tr>
+          <tr><td>8 horas</td><td>R$ 1.520,00</td><td>R$ 190,00</td><td>Economize R$ 480</td></tr>
+          <tr><td>9 horas</td><td>R$ 1.665,00</td><td>R$ 185,00</td><td>Economize R$ 585</td></tr>
+          <tr><td>10+ horas</td><td>R$ 180,00/hora</td><td>R$ 180,00</td><td class="ok">Economia até 28%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:8px"><strong>Combo Inteligente:</strong> Diagnóstico + 4h — <s>R$ 1.100,00</s> por <strong>R$ 1.050,00</strong> <span class="ok">(+ economia R$ 50,00)</span></p>
+    <p class="muted">Pacote corporativo: 2–5 pessoas +30% • 6–10 pessoas +50% • Online (–10%), Presencial (+ despesas) ou Híbrido.</p>
+  </div>
+    <p style="margin-top:16px">
+      <a class="btn btn-outline" href="index.html">⬅ Voltar para o portfólio</a>
+    </p>
+  </div>
+</section>
+<!-- =================== SEÇÃO 4 — CONTATO =================== -->
+<section class="canvas page">
+  <div class="card no-break">
+    <span class="page-title">CONTATO</span>
+    <h2>Conecte-se Comigo</h2>
+    <p><strong>Wriell Gama Oliveira</strong><br>
+    Consultor Especialista em Tecnologia Contábil<br>
+    Auditoria • Contabilidade Tributária • Tecnologia da Informação</p>
+    <p>📞 <strong>+55 63 99203-8278</strong></p>
+    <p>📧 <strong>wriellconsultor@gmail.com</strong></p>
+    <br>
+    <!-- LINKS LADO A LADO -->
+    <div style="
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 10px;
+    ">
+      <!-- Instagram -->
+      <a href="https://www.instagram.com/wrielloliveira/" 
+         target="_blank" 
+         rel="noopener" 
+         class="btn btn-outline"
+         style="min-width: 180px; text-align:center;">
+        📱 Instagram
+      </a>
+      <!-- LinkedIn -->
+      <a href="https://linkedin.com/in/SEU_LINKEDIN" 
+         target="_blank" 
+         rel="noopener" 
+         class="btn btn-outline"
+         style="min-width: 180px; text-align:center;">
+        🔗 LinkedIn
+      </a>
+      <!-- Currículo Lattes -->
+      <a href="https://lattes.cnpq.br/SEU_CODIGO" 
+         target="_blank" 
+         rel="noopener" 
+         class="btn btn-outline"
+         style="min-width: 180px; text-align:center;">
+        📄 Currículo Lattes
+      </a>
+    </div>
+    <br><br>
+    <!-- QR + AÇÃO -->
+    <div class="qr" style="margin-top:10px">
+      <img src="Imagens/QR-WHATSAPP.jpg" alt="QR WhatsApp" loading="lazy">
+      <div>
+        <p class="muted">Escaneie o QR para falar comigo ou clique no botão abaixo:</p>
+        <p>
+          <a class="btn btn-primary" 
+             href="https://wa.me/message/BM4GUNJSSCSEH1"
+             target="_blank" 
+             rel="noopener">📲 Conversar no WhatsApp</a>
+        </p>
+        <p style="margin-top:-8px;">
+          <a href="https://wa.me/message/BM4GUNJSSCSEH1" 
+             target="_blank" 
+             rel="noopener">https://wa.me/message/BM4GUNJSSCSEH1</a>
+        </p>
+        <p class="muted" style="margin-top:6px;">
+          Validade desta proposta: 30 dias a partir do envio.
+        </p>
+      </div>
+    </div>
+  </div>
+  <p class="center muted" style="margin-top:12px;">
+    © <script>document.write(new Date().getFullYear())</script> Wriell Oliveira Consultor — Todos os direitos reservados.
+  </p>
+</section>
+</body>
+</html>
